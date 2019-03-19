@@ -1,8 +1,11 @@
 # apache_multi_exporter
-Python Prometheus exporter for multiple Apache instances
+Python Prometheus exporter for multiple Apache instances.
+
 It uses Python Bottle framework.
 
+
 server-status should be configured on the Apache instances.
+
 
 Prometheus Configuration:
 
