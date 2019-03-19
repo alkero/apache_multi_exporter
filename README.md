@@ -7,6 +7,10 @@ It uses Python Bottle framework.
 server-status should be configured on the Apache instances.
 
 
+Installation
+
+Just copy apache_multi_exporter.py file on your Prometheus server and run it (change the host name on the last line if you want to run it on a different server).
+
 Prometheus Configuration:
 
 ```
