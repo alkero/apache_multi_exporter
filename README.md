@@ -16,13 +16,6 @@ nohup python ./apache_multi_exporter.py &
 ```
 
 
-To check if it works:
-
-```
-curl localhost:8767/metrics?target=http//apache1:8080
-```
-
-
 Prometheus Configuration
 
 ```
