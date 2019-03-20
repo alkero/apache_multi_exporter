@@ -7,11 +7,23 @@ It uses Python Bottle framework.
 server-status should be configured on the Apache instances.
 
 
-Installation
+Installation (on Prometheus server)
 
-Just copy apache_multi_exporter.py file on your Prometheus server and run it (change the host name on the last line if you want to run it on a different server).
+```
+wget http://bottlepy.org/bottle.py
+wget https://raw.githubusercontent.com/alkero/apache_multi_exporter/master/apache_multi_exporter.py
+nohup python ./apache_multi_exporter.py &
+```
 
-Prometheus Configuration:
+
+To check if it works:
+
+```
+curl localhost:8767/metrics?target=http//apache1:8080
+```
+
+
+Prometheus Configuration
 
 ```
   - job_name: 'apache'
