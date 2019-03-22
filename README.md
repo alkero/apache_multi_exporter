@@ -29,6 +29,6 @@ Prometheus Configuration
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: <hostname>:8767  # The apache exporter
+        replacement: localhost:8767  # The apache exporter
 ```
-Replace <hostname> with the name of the server where apache_multi_exporter is installed.
+Replace localhost with the name of the server where apache_multi_exporter is installed.
