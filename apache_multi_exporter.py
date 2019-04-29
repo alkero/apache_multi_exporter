@@ -1,5 +1,7 @@
 from bottle import route, run, response, request
-import urllib2, sys
+import urllib2, sys, socket
+
+timeout = 2
 
 @route('/metrics')
 def get_metrics():
@@ -43,4 +45,5 @@ def get_metrics():
 		response.status = 300
 		return("Unexpected error:", sys.exc_info()[0])
 
+socket.setdefaulttimeout(timeout)
 run(host='0.0.0.0', port=8767)
