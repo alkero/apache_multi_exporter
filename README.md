@@ -12,7 +12,7 @@ Installation
 ```
 wget http://bottlepy.org/bottle.py
 wget https://raw.githubusercontent.com/alkero/apache_multi_exporter/master/apache_multi_exporter.py
-nohup python ./apache_multi_exporter.py &
+nohup python ./app.py &
 ```
 
 
@@ -29,6 +29,6 @@ Prometheus Configuration
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: localhost:8767  # The apache exporter
+        replacement: localhost:8080  # The apache exporter
 ```
 Replace localhost with the name of the server where apache_multi_exporter is installed.
