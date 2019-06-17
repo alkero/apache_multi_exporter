@@ -46,4 +46,4 @@ def get_metrics():
 		return("Unexpected error:", sys.exc_info()[0])
 
 socket.setdefaulttimeout(timeout)
-run(host='0.0.0.0', port=8767)
+run(host='0.0.0.0', port=8080)
