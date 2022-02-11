@@ -31,4 +31,4 @@ Prometheus Configuration
       - target_label: __address__
         replacement: localhost:8080  # The apache exporter
 ```
-Replace localhost with the name of the server where apache_multi_exporter is installed.
+Add your own targets corresponding to your Apache instances, and replace localhost with the name of the server where apache_multi_exporter is running.
